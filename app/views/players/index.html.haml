@@ -1,0 +1,39 @@
+.page-header
+  %h1 NFL RUSHING
+
+%table#main-table.table.table-striped
+  %thead
+    %tr
+      %th Player
+      %th Team
+      %th Pos
+      %th Att
+      %th Att/G
+      %th Yrds
+      %th Avg
+      %th Yds/G
+      %th TD
+      %th Lng
+      %th 1st
+      %th 1st%
+      %th 20+
+      %th 40+
+      %th FUM
+  %tbody
+    - @players.each do |player|
+      %tr
+        %td= player['Player']
+        %td= player['Team']
+        %td= player['Pos']
+        %td= player['Att']
+        %td= player['Att/G']
+        %td= player['Yds']
+        %td= player['Avg']
+        %td= player['Yds/G']
+        %td= player['TD']
+        %td= player['Lng']
+        %td= player['1st']
+        %td= player['1st%']
+        %td= player['20+']
+        %td= player['40+']
+        %td= player['FUM']
