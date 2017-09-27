@@ -6,6 +6,7 @@ You need to have [Bundler](http://bundler.io/) installed.
 
 Open a terminal:
 * git clone https://github.com/smoneyg/nfl.git
+* cd nfl
 * bundle install
 * rails s
 
